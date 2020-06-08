@@ -40,9 +40,11 @@ export default class SignUp extends Component {
         .then(json => {
             console.log(json);
             if (json.error) return false;
+            // handle success case
+            this.props.history.push('/signin');
         })
         .catch(error => {
-         console.log(error);
+            console.log(error);
         });
     };
 
