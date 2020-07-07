@@ -1,13 +1,17 @@
 import React, {Component} from 'react';
 import './admin.style.scss'
+import Line from '../line/line';
+import Pie from '../pie/pie';
 
 
 export default class Admin extends Component {
     render() {
         return (
+            <React.Fragment>
             <div>
-                <h1 className="HeaderTag">This will be an Admin Dashboard</h1>
-            </div>
+                <Line/><Pie/>
+                </div>
+            </React.Fragment>
         )
     }
 }
