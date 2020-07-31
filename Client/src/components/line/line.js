@@ -34,7 +34,7 @@ const legend = {
 const options = {
   title: {
     display: true,
-    text: "Chart Title"
+    text: "Line Chart"
   },
   scales: {
     yAxes: [

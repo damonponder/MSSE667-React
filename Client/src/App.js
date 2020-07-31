@@ -3,8 +3,12 @@ import { Switch, Route, BrowserRouter } from  "react-router-dom";
 import SignIn from './components/home/signin';
 import SignUp from './components/registration/signup';
 import Admin from './components/admin/admin';
-
+import SpreadSheet from './components/spreadsheet/spreadsheet';
+import Presentation from './components/presentation/presentation';
 import './App.css';
+
+
+
 
 class App extends Component {
   render() {
@@ -16,6 +20,9 @@ class App extends Component {
               <Route exact path="/signin" component={SignIn}/>
               <Route exact path="/signup" component={SignUp}/>
               <Route exact path="/execDashboard" component={Admin}/>
+              <Route exact path="/spreadSheet" component={SpreadSheet}/>
+              <Route exact path="/presenation" component={Presentation}/>
+
             </div>
           </Switch>
         </BrowserRouter>
